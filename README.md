@@ -16,13 +16,13 @@
 
 * In order for my dataset to be comprehensible to a machine learning algorithm, its data should be numeric. Since the coin names did not contribute to the analysis of the data, I deleted the `CoinName` from the original DataFrame.
 
-* My next step in data preparation was to convert the remaining features with text values, `Algorithm` and `ProofType`, into numerical data. To accomplish this task, I used Pandas to create dummy variables. Then examined the number of rows and columns of my dataset. How did they change? Read my thoughts in [Notebook](unsupervisedML_crypto.ipynb).
+* My next step in data preparation was to convert the remaining features with text values, `Algorithm` and `ProofType`, into numerical data. To accomplish this task, I used Pandas to create dummy variables. Then examined the number of rows and columns of my dataset. How did they change? Read my thoughts in [Cryptocurrencies workbook](unsupervisedML_crypto.ipynb).
 
 * Standardized my dataset so that columns that contain larger values would not unduly influence the outcome.
 
 ### Dimensionality Reduction
 
-* Creating dummy variables above dramatically increased the number of features in my dataset. I performed dimensionality reduction with PCA. Rather than specify the number of principal components when I instantiate the PCA model, it was possible to state the desired **explained variance**. For example, say that a dataset has 100 features. Using `PCA(n_components=0.99)` creates a model that will preserve approximately 99% of the explained variance, whether that means reducing the dataset to 80 principal components or 3. For this project, preserve 90% of the explained variance in dimensionality reduction. How did the number of the features change? Read my thoughts in [Notebook](unsupervisedML_crypto.ipynb).
+* Creating dummy variables above dramatically increased the number of features in my dataset. I performed dimensionality reduction with PCA. Rather than specify the number of principal components when I instantiate the PCA model, it was possible to state the desired **explained variance**. For example, say that a dataset has 100 features. Using `PCA(n_components=0.99)` creates a model that will preserve approximately 99% of the explained variance, whether that means reducing the dataset to 80 principal components or 3. For this project, preserve 90% of the explained variance in dimensionality reduction. How did the number of the features change? Read my thoughts in [Cryptocurrencies workbook](unsupervisedML_crypto.ipynb).
 
 * Further I reduced the dataset dimensions with t-SNE and visually inspect the results. In order to accomplish this task, I ran t-SNE on the principal components: the output of the PCA transformation. Then created a scatter plot of the t-SNE output. Observed whether there are distinct clusters or not.
 
@@ -30,9 +30,9 @@
 
 * Created an elbow plot to identify the best number of clusters. Used a for-loop to determine the inertia for each `k` between 1 through 10. Determined where the elbow of the plot was, and at which value of `k` it appeared.
 
-### Recommendation
+### My Recommendation
 
-* Based on my findings, made a brief recommendation to my clients. Can the cryptocurrencies be clustered together? Into how many clusters? Read my thoughts in [Notebook](unsupervisedML_crypto.ipynb).
+* Based on my findings, made a brief recommendation to my clients. Can the cryptocurrencies be clustered together? Into how many clusters? Read my thoughts in [Cryptocurrencies workbook](unsupervisedML_crypto.ipynb).
 
 ## References
 
