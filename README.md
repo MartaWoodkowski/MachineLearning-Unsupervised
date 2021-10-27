@@ -32,7 +32,7 @@
 
 ### Recommendation
 
-* Based on your findings, made a brief recommendation to my clients. Can the cryptocurrencies be clustered together? Into how many clusters? Read my thoughts in [Notebook](unsupervisedML_crypto.ipynb).
+* Based on my findings, made a brief recommendation to my clients. Can the cryptocurrencies be clustered together? Into how many clusters? Read my thoughts in [Notebook](unsupervisedML_crypto.ipynb).
 
 ## References
 
